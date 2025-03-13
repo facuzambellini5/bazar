@@ -1,7 +1,9 @@
 package com.example.bazar.services;
 
+import com.example.bazar.dtos.VentaMayorDTO;
 import com.example.bazar.dtos.VentaProductoDTO;
 import com.example.bazar.dtos.VentaDTO;
+import com.example.bazar.dtos.VentasFechaDTO;
 import com.example.bazar.models.Cliente;
 import com.example.bazar.models.Producto;
 import com.example.bazar.models.Venta;
@@ -13,6 +15,7 @@ import com.example.bazar.repositories.IVentaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,7 +39,7 @@ public class VentaService implements IVentaService{
     public void saveVenta(VentaDTO ventaDTO) {
         Venta venta = new Venta();
 
-        venta.setFecha_venta(ventaDTO.getFecha_venta());
+        venta.setFechaVenta(ventaDTO.getFecha_venta());
 
         Cliente cliente = clienteRepo.findById(ventaDTO.getId_cliente()).orElse(null);
         venta.setUncliente(cliente);
@@ -55,7 +58,7 @@ public class VentaService implements IVentaService{
                 continue;
             }
 
-            if(producto.getCantidad_disponible() <prodDTO.getCantidad()){
+            if(producto.getCantidad_disponible() < prodDTO.getCantidad()){
                 throw new RuntimeException("Stock no disponible para el producto: "+producto.getNombre()+
                                             ". Cantidad disponible: "+producto.getCantidad_disponible());
             }
@@ -105,5 +108,68 @@ public class VentaService implements IVentaService{
     @Override
     public void editVenta(Venta venta) {
         this.saveVenta(venta);
+    }
+
+    @Override
+    public List<VentaProducto> getProductosVenta(Long codigo_venta){
+        Venta venta = this.getVentabyId(codigo_venta);
+
+        List<VentaProducto> listaProductos = new ArrayList<>();
+
+        listaProductos.addAll(venta.getListaProductos());
+
+        return listaProductos;
+    }
+
+    @Override
+    public VentasFechaDTO getVentasByFecha(LocalDate fechaVenta){
+        VentasFechaDTO ventasFechaDTO = new VentasFechaDTO();
+        ventasFechaDTO.setFecha_venta(fechaVenta);
+
+        List<Venta> ventas = ventaRepo.findByFechaVenta(fechaVenta);
+
+        ventasFechaDTO.setCantidadVentas(ventas.size());
+
+        Double total = 0.0;
+        for(Venta venta : ventas){
+            total += venta.getTotal();
+        }
+
+        ventasFechaDTO.setVentas(ventas);
+        ventasFechaDTO.setTotal(total);
+        return ventasFechaDTO;
+    }
+
+    @Override
+    public VentasFechaDTO getVentasByFechaBetween(LocalDate fechaInicio, LocalDate fechaFin){
+        VentasFechaDTO ventasFechaDTO = new VentasFechaDTO();
+        List<Venta> ventas = ventaRepo.findByFechaVentaBetween(fechaInicio,fechaFin);
+
+        ventasFechaDTO.setCantidadVentas(ventas.size());
+
+        Double total = 0.0;
+        for(Venta venta : ventas){
+            total += venta.getTotal();
+        }
+
+        ventasFechaDTO.setVentas(ventas);
+        ventasFechaDTO.setTotal(total);
+        return ventasFechaDTO;
+
+    }
+
+    @Override
+    public VentaMayorDTO getVentaMayor(){
+
+        Venta venta = ventaRepo.findFirstByOrderByTotalDesc();
+        VentaMayorDTO ventaMayorDTO = new VentaMayorDTO();
+
+        ventaMayorDTO.setCodigo_venta(venta.getCodigo_venta());
+        ventaMayorDTO.setTotal(venta.getTotal());
+        ventaMayorDTO.setListaProductos(venta.getListaProductos());
+        ventaMayorDTO.setNombre(venta.getUncliente().getNombre());
+        ventaMayorDTO.setApellido(venta.getUncliente().getApellido());
+
+        return ventaMayorDTO;
     }
 }

@@ -7,6 +7,7 @@ public class VentaProducto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonIgnore
     private Long id_ventaProducto;
 
     @ManyToOne
