@@ -1,0 +1,113 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 OPR/117.0.0.0" version="26.1.0">
+  <diagram name="Página-1" id="2w3bk7mtnwcqQKbcfBp8">
+    <mxGraphModel dx="1008" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="119.5" as="sourcePoint" />
+            <mxPoint x="400" y="119.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="n_7Au9A8-I3gm7pog3Xf-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="91" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-1" value="Venta" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="200" y="80" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=default;" parent="1" source="n_7Au9A8-I3gm7pog3Xf-3" target="n_7Au9A8-I3gm7pog3Xf-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-3" value="VentaProducto" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="80" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="n_7Au9A8-I3gm7pog3Xf-6" target="n_7Au9A8-I3gm7pog3Xf-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-6" value="Producto" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="640" y="80" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-11" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="270" y="98" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-12" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="370" y="98" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-14" value="Clase intermedia que contendrá la FK de venta y la FK de producto." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="375" y="10" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-16" value="y como atributo propio contendrá la cantidad de un determinado producto" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="360" y="50" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-18" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="610" y="98" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-20" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="515" y="98" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.333;entryY=0.733;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="n_7Au9A8-I3gm7pog3Xf-3" target="n_7Au9A8-I3gm7pog3Xf-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-25" value="un producto puede estar en muchos ventaProducto" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="550" y="140" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-26" value="una venta puede tener muchos ventaProducto" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="310" y="140" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-29" value="A nivel lógico, desde la clase VentaProducto se mapearía:&lt;div&gt;@ManyToOne&lt;/div&gt;&lt;div&gt;Venta&lt;/div&gt;&lt;div&gt;@ManyToOne&lt;/div&gt;&lt;div&gt;Producto&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="355" y="220" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="n_7Au9A8-I3gm7pog3Xf-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-31" value="Cliente" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="50" y="210" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-35" value="Venta" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-37" value="Producto" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="880" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-38" value="VentaProducto" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-39" value="VentaDTO" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="660" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-40" value="Es lo que recibe nuestro controller, que luego va al Service para registrar la venta" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="630" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-41" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;fecha_venta&lt;/span&gt;&lt;/div&gt;&lt;div&gt;List&amp;lt;VentaProductoDTO&amp;gt; productos&lt;/div&gt;&lt;div&gt;id_cliente&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="710" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-44" value="VentaProductoDTO" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="840" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-45" value="Especifica la cantidad de un determinado producto" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="55" y="810" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-47" value="codigo_producto&lt;div&gt;cantidad&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="160" y="880" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-48" value="&lt;b&gt;codigo_venta&lt;/b&gt;&lt;div&gt;&lt;b&gt;fecha_venta&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;total&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;@OnetoMany&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;List&amp;lt;VentaProducto&amp;gt; listaProductos&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;@ManyToOne&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Cliente unCliente&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="460" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-52" value="Text" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="880" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_7Au9A8-I3gm7pog3Xf-54" value="id_ventaProducto&lt;div&gt;@ManyToOne&lt;br&gt;&lt;div&gt;Venta venta&lt;/div&gt;&lt;/div&gt;&lt;div&gt;@ManyToOne&lt;/div&gt;&lt;div&gt;Producto producto&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="520" y="450" width="120" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
